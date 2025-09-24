@@ -1,28 +1,31 @@
-import numpy as np
+for i in range(1,11):
+    print(i)
+for i in range(1,6):
+    print("for loop",i)
 
-# 1. Create an array
-arr = np.array([1, 2, 3, 4, 5])
-print("Array:", arr)
+count=1
+while count<=5:
+    print("while loop:",count)
+    count+=1
 
-# 2. Difference between list and array
-py_list = [1, 2, 3, 4, 5]
-print("Python List * 2:", py_list * 2)   # repeats list
-print("NumPy Array * 2:", arr * 2)       # multiplies each element
+for i in range(1,11):
+    print("5x",i,"=",5*i)
 
-# 3. Basic operations
-print("Sum:", arr.sum())
-print("Mean:", arr.mean())
-print("Max:", arr.max())
+i = 1
+while i<=10:
+        print(f"5x {i} = {5*i}")
+        i+=1
 
-# 4. Multi-dimensional array
-matrix = np.array([[1, 2, 3], [4, 5, 6]])
-print("Matrix:\n", matrix)
-print("Shape:", matrix.shape)
+total = 0
+for i in range(1,11):
+    total += i
+    print("sum of first 10 numbers:", total)
 
-# 5. Slicing
-print("First row:", matrix[0])
-print("Second column:", matrix[:, 1])
+for i in range(2,21,2):
+    print("even number:", i)
 
-# 6. Reshape
-reshaped = np.arange(1, 10).reshape(3, 3)
-print("Reshaped 3x3:\n", reshaped)
+
+i = 2
+while i<=20:
+     print("even number:", i)
+     i +=2
